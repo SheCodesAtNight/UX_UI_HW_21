@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0;">
+	<!-- Hotjar Tracking Code for https://heavenlyscentsbyjai.weebly.com -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:3137687,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-C5M6BD5YXQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-C5M6BD5YXQ');
+</script>
+
+<body class="header-page">
+
+	<div id="header">
+		<div class="container">
+			<div class="icons">
+				<div class="w-navpane-trigger hamburger">
+					<span></span>
+				</div>
+			</div>
+			<div class="logo">{Logo(2).png}</div>
+			<div class="icons">
+				{search}
+				<a href="#" class="close w-navpane-close"><span></span></a>
+			</div>
+		</div>
+		<div id="navlist" class="w-navlist nav">{menu}</div>
+		<div id="menu" class="slide-panel">
+			<div id="nav" class="nav w-navpane">
+				<div class="container">{menu}</div>
+			</div>
+		</div>
+		<div id="search" class="slide-panel">
+			<div class="container">Search by typing &amp; pressing enter</div>
+		</div>
+		<div id="cart" class="slide-panel">
+			<div class="container"><h2>YOUR CART</h2></div>
+		</div>
+	</div>
+
+	<div id="content">
+		<div id="banner">
+			{{#header}}
+				<div class="banner-content">
+					<div class="container">{content}</div>
+				</div>
+			{{/header}}
+		</div>
+
+		<div id="main">
+			{{#sections}}
+				<div class="container">{content}</div>
+			{{/sections}}
+		</div>
+
+		<div id="footer">{footer}</div>
+	</div>
+
+	<div class="overlay w-navpane-close"></div>
+
+	<script type="text/javascript" src="/files/theme/plugins.js"></script>
+	<script type="text/javascript" src="/files/theme/custom.js"></script>
+</body>
+</html>
